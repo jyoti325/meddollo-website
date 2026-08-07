@@ -1,0 +1,48 @@
+export const healthPackages = [
+  {
+    id: 1,
+    name: "Basic Health Checkup",
+    tests: 18,
+    price: "₹999",
+    featured: false,
+    color: "green",
+    includes: [
+      "Complete Blood Count",
+      "Blood Sugar",
+      "Liver Function Test",
+      "Kidney Function Test",
+      "Urine Routine",
+    ],
+  },
+  {
+    id: 2,
+    name: "Comprehensive Health Checkup",
+    tests: 45,
+    price: "₹2,499",
+    featured: true,
+    color: "yellow",
+    includes: [
+      "CBC",
+      "Thyroid Profile",
+      "Diabetes Profile",
+      "Liver Profile",
+      "Kidney Profile",
+      "Lipid Profile",
+    ],
+  },
+  {
+    id: 3,
+    name: "Executive Health Checkup",
+    tests: 70,
+    price: "₹4,999",
+    featured: false,
+    color: "green",
+    includes: [
+      "Complete Body Checkup",
+      "Cardiac Risk Markers",
+      "Vitamin Profile",
+      "Hormone Profile",
+      "Doctor Consultation",
+    ],
+  },
+];
