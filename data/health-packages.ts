@@ -13,6 +13,7 @@ export const healthPackages = [
       "Kidney Function Test",
       "Urine Routine",
     ],
+    image: "/images/health-packages/package-hero.webp",
   },
   {
     id: 2,
@@ -29,6 +30,7 @@ export const healthPackages = [
       "Kidney Profile",
       "Lipid Profile",
     ],
+    image: "/images/health-packages/comprehensive-health-checkup.webp",
   },
   {
     id: 3,
@@ -44,5 +46,6 @@ export const healthPackages = [
       "Hormone Profile",
       "Doctor Consultation",
     ],
+    image: "/images/health-packages/executive-health-package.webp",
   },
 ];

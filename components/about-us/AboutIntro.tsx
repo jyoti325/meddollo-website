@@ -26,7 +26,7 @@ export default function AboutIntro() {
 
           <div className="relative">
 
-            <div className="overflow-hidden rounded-[40px] shadow-[0_30px_80px_rgba(0,0,0,0.12)]">
+            <div className="h-[550px] overflow-hidden rounded-[40px] shadow-[0_30px_80px_rgba(0,0,0,0.12)]">
 
               <Image
                 src="/images/about/about.jpg"

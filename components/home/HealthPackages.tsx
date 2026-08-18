@@ -35,7 +35,7 @@ export default function HealthPackages() {
               key={pkg.id}
               name={pkg.name}
               description={`${pkg.tests}+ diagnostic tests included.`}
-              image="/images/packages/package-hero.webp"
+              image={pkg.image}
               featured={pkg.featured}
               link="/health-packages"
               features={pkg.includes}

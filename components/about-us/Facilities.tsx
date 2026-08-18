@@ -72,7 +72,7 @@ export default function Facilities() {
             <div className="overflow-hidden rounded-[36px] shadow-[0_30px_80px_rgba(0,0,0,0.12)]">
 
               <Image
-                src="/images/about/facilities.jpg"
+                src="/images/about/facilities.avif"
                 alt="Meddollo Facilities"
                 width={700}
                 height={750}

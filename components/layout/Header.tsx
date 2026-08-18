@@ -18,9 +18,9 @@ export default function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   return (
-    <header className="w-full bg-white shadow-sm sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between min-h-[80px] lg:min-h-[100px]">
+    <header className="w-full bg-white shadow-sm border-b border-gray-300">
+      <div className="max-w-7xl mx-auto px-4 lg:px-4">
+        <div className="flex items-center justify-between min-h-[56px] lg:min-h-[68px]">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link
@@ -28,21 +28,21 @@ export default function Header() {
               aria-label="Meddollo Life Care Home"
             >
               <Image
-                src="/logo.png"
-                alt="Meddollo Life Care Diagnostic Center"
-                width={250}
-                height={100}
-                priority
-                className="
-                w-[130px]
-                sm:w-[160px]
-                md:w-[190px]
-                lg:w-[220px]
-                xl:w-[250px]
-                h-auto
-                object-contain
-                "
-              />
+                  src="/logo.png"
+                  alt="Meddollo Life Care Diagnostic Center"
+                  width={80}
+                  height={32}
+                  priority
+                  className="
+                    w-[50px]
+                    sm:w-[60px]
+                    md:w-[70px]
+                    lg:w-[75px]
+                    xl:w-[80px]
+                    h-auto
+                    object-contain
+                  "
+                />
             </Link>
           </div>
           {/* Desktop Navigation */}

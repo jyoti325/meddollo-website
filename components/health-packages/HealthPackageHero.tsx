@@ -69,7 +69,7 @@ export default function PackageHero() {
             <div className="overflow-hidden rounded-[42px] bg-white p-4 shadow-[0_30px_90px_rgba(0,0,0,.12)]">
 
               <Image
-                src="/images/packages/package-hero.webp"
+                src="/images/health-packages/package-hero.webp"
                 alt="Health Packages"
                 width={700}
                 height={750}
