@@ -6,7 +6,7 @@ export const services = [
       "Accurate pathology testing using modern laboratory technology with quick and reliable reporting.",
     image: "/images/services/pathology.webp",
     color: "green",
-    link: "/services/pathology",
+    link: "/services",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const services = [
       "High-quality digital imaging for faster diagnosis with reduced radiation exposure.",
     image: "/images/services/digital-xray.webp",
     color: "yellow",
-    link: "/services/digital-x-ray",
+    link: "/services",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const services = [
       "Convenient doorstep sample collection by trained professionals for maximum comfort.",
     image: "/images/services/home-collection.webp",
     color: "green",
-    link: "/services/home-sample-collection",
+    link: "/services",
   },
   {
     id: 4,

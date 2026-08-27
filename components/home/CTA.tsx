@@ -1,16 +1,19 @@
-import Link from "next/link";
+"use client";
+
 import { Phone, CalendarCheck } from "lucide-react";
+
+function openAppointmentPopup() {
+  window.dispatchEvent(new Event("openAppointmentPopup"));
+}
 
 export default function CTA() {
   return (
     <section className="relative overflow-hidden py-24">
 
       {/* Background */}
-
       <div className="absolute inset-0 bg-gradient-to-r from-[#006D52] via-[#008F5D] to-[#00B67A]" />
 
       {/* Floating Shapes */}
-
       <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-white/10 blur-3xl"></div>
 
       <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-[#FDD835]/20 blur-3xl"></div>
@@ -22,7 +25,6 @@ export default function CTA() {
           <div className="grid items-center gap-12 lg:grid-cols-2">
 
             {/* Left */}
-
             <div>
 
               <span className="inline-flex rounded-full bg-white/15 px-5 py-2 text-sm font-semibold text-white">
@@ -44,7 +46,6 @@ export default function CTA() {
             </div>
 
             {/* Right */}
-
             <div className="flex flex-col items-start lg:items-end">
 
               <div className="mb-8 rounded-3xl bg-white/15 px-8 py-6 backdrop-blur-md">
@@ -61,14 +62,17 @@ export default function CTA() {
 
               <div className="flex flex-wrap gap-4">
 
-                <Link
-                  href="/contact-us"
+                {/* Book Appointment */}
+                <button
+                  type="button"
+                  onClick={openAppointmentPopup}
                   className="inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 font-semibold text-[#008F5D] transition hover:scale-105"
                 >
                   <CalendarCheck size={20} />
                   Book Appointment
-                </Link>
+                </button>
 
+                {/* Call Now */}
                 <a
                   href="tel:+917890369598"
                   className="inline-flex items-center gap-3 rounded-full border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-[#008F5D]"

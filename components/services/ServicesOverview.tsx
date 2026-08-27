@@ -1,7 +1,12 @@
+"use client";
+
 import Image from "next/image";
-import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { services } from "@/data/services";
+
+function openAppointmentPopup() {
+  window.dispatchEvent(new Event("openAppointmentPopup"));
+}
 
 export default function ServicesOverview() {
   return (
@@ -42,7 +47,6 @@ export default function ServicesOverview() {
               >
 
                 {/* Image */}
-
                 <div className="overflow-hidden rounded-[40px] shadow-[0_25px_80px_rgba(0,0,0,0.12)]">
 
                   <Image
@@ -56,7 +60,6 @@ export default function ServicesOverview() {
                 </div>
 
                 {/* Content */}
-
                 <div
                   className={`rounded-[40px] p-10 shadow-xl ${
                     service.color === "green"
@@ -77,15 +80,15 @@ export default function ServicesOverview() {
                     {service.description}
                   </p>
 
-                  <Link
-                    href="/contact-us"
+                  {/* Book Test */}
+                  <button
+                    type="button"
+                    onClick={openAppointmentPopup}
                     className="mt-8 inline-flex items-center gap-3 rounded-full bg-[#008F5D] px-7 py-4 font-semibold text-white transition hover:bg-[#006D52]"
                   >
                     Book Test
-
                     <ArrowRight size={18} />
-
-                  </Link>
+                  </button>
 
                 </div>
 

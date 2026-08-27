@@ -1,8 +1,14 @@
+"use client";
+
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 import DoctorCard from "@/components/ui/DoctorCard";
 import { doctors } from "@/data/doctors";
+
+function openAppointmentPopup() {
+  window.dispatchEvent(new Event("openAppointmentPopup"));
+}
 
 export default function Doctors() {
   return (
@@ -15,7 +21,6 @@ export default function Doctors() {
       <div className="relative mx-auto max-w-7xl px-6">
 
         {/* Heading */}
-
         <div className="mx-auto max-w-3xl text-center">
 
           <span className="inline-flex rounded-full bg-[#008F5D]/10 px-5 py-2 text-sm font-semibold text-[#008F5D]">
@@ -35,7 +40,6 @@ export default function Doctors() {
         </div>
 
         {/* Cards */}
-
         <div className="mt-20 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
           {doctors.map((doctor) => (
@@ -53,17 +57,16 @@ export default function Doctors() {
         </div>
 
         {/* CTA */}
-
         <div className="mt-16 text-center">
 
-          <Link
-            href="/contact-us"
+          <button
+            type="button"
+            onClick={openAppointmentPopup}
             className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[#006D52] to-[#00B67A] px-8 py-4 font-semibold text-white shadow-lg transition duration-300 hover:scale-105"
           >
             Book Consultation
-
             <ArrowRight size={20} />
-          </Link>
+          </button>
 
         </div>
 

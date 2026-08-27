@@ -1,6 +1,12 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ChevronRight, HeartPulse } from "lucide-react";
+
+function openAppointmentPopup() {
+  window.dispatchEvent(new Event("openAppointmentPopup"));
+}
 
 export default function PackageHero() {
   return (
@@ -14,27 +20,19 @@ export default function PackageHero() {
         <div className="grid items-center gap-16 lg:grid-cols-2">
 
           {/* Left */}
-
           <div>
 
             <div className="mb-8 flex items-center gap-2 text-sm text-[#008F5D]">
-
               <Link href="/">Home</Link>
-
               <ChevronRight size={18} />
-
               <span className="font-semibold">
                 Health Packages
               </span>
-
             </div>
 
             <span className="inline-flex items-center gap-2 rounded-full bg-[#008F5D]/10 px-5 py-2 text-sm font-semibold text-[#008F5D]">
-
               <HeartPulse size={18} />
-
               Preventive Healthcare
-
             </span>
 
             <h1 className="mt-8 text-5xl font-black leading-tight text-[#143B38] lg:text-7xl">
@@ -51,19 +49,19 @@ export default function PackageHero() {
               family healthy.
             </p>
 
-            <Link
-              href="/contact-us"
+            {/* Book Health Package */}
+            <button
+              type="button"
+              onClick={openAppointmentPopup}
               className="mt-10 inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[#008F5D] to-[#00B67A] px-8 py-4 font-semibold text-white shadow-xl transition hover:scale-105"
             >
               Book Health Package
-
               <ArrowRight size={18} />
-            </Link>
+            </button>
 
           </div>
 
           {/* Right */}
-
           <div className="relative">
 
             <div className="overflow-hidden rounded-[42px] bg-white p-4 shadow-[0_30px_90px_rgba(0,0,0,.12)]">

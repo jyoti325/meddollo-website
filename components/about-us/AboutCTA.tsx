@@ -1,12 +1,16 @@
-import Link from "next/link";
+"use client";
+
 import { ArrowRight, Phone } from "lucide-react";
+
+function openAppointmentPopup() {
+  window.dispatchEvent(new Event("openAppointmentPopup"));
+}
 
 export default function AboutCTA() {
   return (
     <section className="relative overflow-hidden py-24">
 
       {/* Background */}
-
       <div className="absolute inset-0 bg-gradient-to-r from-[#006D52] via-[#008F5D] to-[#00B67A]" />
 
       <div className="absolute -top-24 -left-24 h-96 w-96 rounded-full bg-white/10 blur-3xl"></div>
@@ -35,14 +39,17 @@ export default function AboutCTA() {
 
           <div className="mt-10 flex flex-wrap justify-center gap-5">
 
-            <Link
-              href="/contact-us"
+            {/* Book Appointment */}
+            <button
+              type="button"
+              onClick={openAppointmentPopup}
               className="inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 font-semibold text-[#008F5D] transition hover:scale-105"
             >
               Book Appointment
               <ArrowRight size={20} />
-            </Link>
+            </button>
 
+            {/* Call Now */}
             <a
               href="tel:+917890369598"
               className="inline-flex items-center gap-3 rounded-full border border-white px-8 py-4 font-semibold text-white transition hover:bg-white hover:text-[#008F5D]"
