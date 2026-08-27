@@ -26,7 +26,7 @@ export default function ContactForm() {
             </span>
 
             <h2 className="mt-5 text-4xl font-black text-[#143B38]">
-              We'd Love to Hear From You
+              We&apos;d Love to Hear From You
             </h2>
 
             <p className="mt-4 text-gray-600 leading-7">

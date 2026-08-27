@@ -1,6 +1,11 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { ShieldCheck, House, Clock3 } from "lucide-react";
+
+const openAppointmentPopup = () => {
+  window.dispatchEvent(new CustomEvent("open-appointment-popup"));
+};
 
 export default function Hero() {
   return (
@@ -43,12 +48,13 @@ export default function Hero() {
 
         <div className="mt-8 flex flex-col sm:flex-row items-center lg:items-start gap-4">
 
-          <Link
-            href="/contact-us"
-            className="w-full sm:w-auto text-center rounded-full bg-gradient-to-r from-[#006D52] to-[#00B67A] px-8 py-3.5 font-semibold text-white shadow-lg transition duration-300 hover:scale-105 hover:shadow-xl"
-          >
-            Book Appointment
-          </Link>
+        <button
+          type="button"
+          onClick={openAppointmentPopup}
+          className="w-full sm:w-auto text-center rounded-full bg-gradient-to-r from-[#006D52] to-[#00B67A] px-8 py-3.5 font-semibold text-white shadow-lg transition duration-300 hover:scale-105 hover:shadow-xl"
+        >
+          Book Appointment
+        </button>
 
           <Link
             href="/health-packages"

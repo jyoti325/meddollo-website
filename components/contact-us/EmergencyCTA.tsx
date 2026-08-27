@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import {
   PhoneCall,
@@ -5,6 +7,8 @@ import {
   ArrowRight,
   HeartHandshake,
 } from "lucide-react";
+
+import { openAppointmentPopup } from "@/components/common/appointment";
 
 export default function EmergencyCTA() {
   return (
@@ -40,7 +44,7 @@ export default function EmergencyCTA() {
 
               <h2 className="mt-8 text-4xl font-black leading-tight text-white lg:text-6xl">
 
-                Let's Take the
+                Let&apos;s Take the
                 <br />
 
                 First Step Towards
@@ -76,14 +80,14 @@ export default function EmergencyCTA() {
 
               <div className="mt-8 space-y-4">
 
-                <Link
-                  href="/health-packages"
-                  className="flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#008F5D] to-[#00B67A] px-6 py-4 font-semibold text-white transition-all duration-300 hover:scale-105"
-                >
-                  <CalendarDays size={20} />
-
-                  Book Appointment
-                </Link>
+              <button
+                type="button"
+                onClick={openAppointmentPopup}
+                className="flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#008F5D] to-[#00B67A] px-6 py-4 font-semibold text-white transition-all duration-300 hover:scale-105 w-full"
+              >
+                <CalendarDays size={20} />
+                Book Appointment
+              </button>
 
                 <a
                   href="tel:+917890369598"

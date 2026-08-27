@@ -1,4 +1,3 @@
-import ContactHero from "@/components/contact-us/ContactHero";
 import ContactCards from "@/components/contact-us/ContactCards";
 import ContactForm from "@/components/contact-us/ContactForm";
 import ContactMap from "@/components/contact-us/ContactMap";
@@ -8,7 +7,6 @@ import EmergencyCTA from "@/components/contact-us/EmergencyCTA";
 export default function ContactUsPage() {
   return (
     <>
-      <ContactHero />
       <ContactCards />
       <ContactForm />
       <ContactMap />
