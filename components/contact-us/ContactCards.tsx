@@ -97,27 +97,40 @@ export default function ContactCards() {
                     </p>
 
                     {/* Google Review QR */}
-                    <a
-                      href="https://www.google.com/searchviewer/10?svid=CAwSHRIbCgNwdnESFENnMHZaeTh4TVc1ck9IUTBhSEprGAo&sa=X&ved=2ahUKEwjfkuuE9b2WAxVx3TgGHf3NBFEQ_74PegoIAggACAAIFhAI#sv=CAESzQEKuQEStgEKd0FKaVQ0dEprWFdvejlCMFptLXpkRHRPWmxGeWUyS0lOemdGQ2g4SFVQUnRIMlpMYXR3dDJSY01OZ2VJajFBcDdCWkdoRkJwdFl1VTVBMndWX0pCeldRUGxBNVNLclpveGU0R250Q3Ryak9tcDRLbHFrRVhIVlk4Ehc3cWlPYXZPZE9xNjg0LUVQcFlhVjhRWRoiQURzcjlmUXh6LWlYODZXRDV3c216RG5fRVc4SVF6RlNqQRIEODA1MRoBMyoAMAA4AUAAGAAgkPO74AdKAhAChttps://www.google.com/searchviewer/10?svid=CAwSHRIbCgNwdnESFENnMHZaeTh4TVc1ck9IUTBhSEprGAo&sa=X&ved=2ahUKEwjfkuuE9b2WAxVx3TgGHf3NBFEQ_74PegoIAggACAAIFhAI"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Give a Google Review"
-                      className="mt-6 inline-block"
-                    >
-                      <div className="rounded-2xl border border-[#008F5D]/20 bg-white p-3 shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                        <img
-                          src="/images/contact/google-review-qr.webp"
-                          alt="Scan QR code to leave a Google Review"
-                          width={120}
-                          height={120}
-                          className="h-[120px] w-[120px] object-contain"
-                        />
-                      </div>
-                    </a>
+<a
+  href="https://www.google.com/searchviewer/10?svid=CAwSHRIbCgNwdnESFENnMHZaeTh4TVc1ck9IUTBhSEprGAo&sa=X&ved=2ahUKEwjfkuuE9b2WAxVx3TgGHf3NBFEQ_74PegoIAggACAAIFhAI#sv=CAESzQEKuQEStgEKd0FKaVQ0dEprWFdvejlCMFptLXpkRHRPWmxGeWUyS0lOemdGQ2g4SFVQUnRIMlpMYXR3dDJSY01OZ2VJajFBcDdCWkdoRkJwdFl1VTVBMndWX0pCeldRUGxBNVNLclpveGU0R250Q3Ryak9tcDRLbHFrRVhIVlk4Ehc3cWlPYXZPZE9xNjg0LUVQcFlhVjhRWRoiQURzcjlmUXh6LWlYODZXRDV3c216RG5fRVc4SVF6RlNqQRIEODA1MRoBMyoAMAA4AUAAGAAgkPO74AdKAhAC"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Give a Google Review"
+  className="mt-6 inline-block"
+>
+  <div className="rounded-2xl border border-[#008F5D]/20 bg-white p-3 shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-lg">
+    <img
+      src="/images/contact/google-review-qr.webp"
+      alt="Scan QR code to leave a Google Review"
+      width={120}
+      height={120}
+      className="h-[120px] w-[120px] object-contain"
+    />
+  </div>
+</a>
 
-                    <p className="mt-3 text-xs font-medium text-[#008F5D]">
-                      Click on the QR code to review us on Google
-                    </p>
+<p className="mt-3 text-xs font-medium text-[#008F5D]">
+  Click on the QR code to review us on Google
+</p>
+
+{/* Submit Review Button */}
+<a
+  href="https://g.page/r/CZLHjPbDwkhHEAE/review"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#008F5D] to-[#00B67A] px-6 py-3.5 font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+  aria-label="Submit a Google Review"
+>
+  <Star size={18} fill="currentColor" />
+  Submit Review
+  <ArrowUpRight size={18} />
+</a>
                   </>
                 )}
 
